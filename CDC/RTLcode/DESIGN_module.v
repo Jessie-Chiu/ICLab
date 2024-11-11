@@ -176,7 +176,7 @@ end
 // s_fifo (& output)
 // ----------------------
 // due to SRAM read out data will delay 2 cycle
-assign fifo_rinc = temp_valid2;
+assign fifo_rinc = (current_state==s_fifo) ? 1'd1 : 1'd0;
 
 always @(posedge clk or negedge rst_n) begin
     if(!rst_n) temp_valid1 <= 1'd0;
