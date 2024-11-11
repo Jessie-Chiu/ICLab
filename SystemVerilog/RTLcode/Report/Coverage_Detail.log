@@ -1,0 +1,131 @@
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+<> User: iclab086
+
+Host: ee24
+
+Report date: Wed 22 May 2024 18:57:28 CST
+
+Report options: -detail -text -metrics covergroup -out ./Report/Coverage_Detail.log -type -covered
+
+Coverage database path: /RAID2/COURSE/iclab/iclab086/chiu/Lab09/Exercise/01_RTL/cov_work/scope/test
+
+Coverage model files: /RAID2/COURSE/iclab/iclab086/chiu/Lab09/Exercise/01_RTL/cov_work/scope/icc_00000000_32a6d49a.ucm
+
+Coverage data files: /RAID2/COURSE/iclab/iclab086/chiu/Lab09/Exercise/01_RTL/cov_work/scope/test/icc_00000000_32a6d49a.ucd
+
+CCF files:  None
+
+
+Coverage database date: Tue 21 May 2024 20:38:37 CST
+
+*** There were no refinement files applied ***
+
+ <>
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+Coverage Table Legend
+---------------------
+  EXCL   excluded using refinement rule
+  P-EXCL excluded from parent
+  U-EXCL excluded and unreachable by IEV
+  T-EXCL excluded from type
+  S-EXCL smart excluded using refinement rule
+  EXCL(S) smart indirect excluded
+  EMPTY  all children are excluded
+  CONST  marked constant during simulation
+  IGN    marked ignored during simulation
+  UNG    marked ungradeable during simulation
+  DES    marked deselected during simulation
+  UNR    marked unreachable by IEV
+
+
+Covered CoverGroup Detail Report, Type Based
+============================================
+
+Type name: Checker
+File name: /RAID2/COURSE/iclab/iclab086/chiu/Lab09/Exercise/01_RTL/CHECKER.sv
+Number of covered cover bins: 63 of 63
+
+Name                           Average, Covered Grade         Line  Source Code                    
+---------------------------------------------------------------------------------------------------
+Spec1                          100.00%, 100.00% (8/8)         43    covergroup Spec1 @(posedge clk); 
+|--btype                       100.00% (8/8)                  46    btype: coverpoint bev_info.bev_type{ 
+| |--b_bev_type[Black_Tea]     100.00% (7585/100)             47    bins b_bev_type [] = {Black_Tea, Milk_Tea, Extra_Milk_Tea, Green_Tea, Green_Milk_Tea, Pineapple_Juice, Super_Pineapple_Tea, Super_Pineapple_Milk_Tea}; 
+| |--b_bev_type[Milk_Tea]      100.00% (7565/100)             47    bins b_bev_type [] = {Black_Tea, Milk_Tea, Extra_Milk_Tea, Green_Tea, Green_Milk_Tea, Pineapple_Juice, Super_Pineapple_Tea, Super_Pineapple_Milk_Tea}; 
+| |--b_bev_type[Extra_Milk_Tea] 100.00% (8597/100)             47    bins b_bev_type [] = {Black_Tea, Milk_Tea, Extra_Milk_Tea, Green_Tea, Green_Milk_Tea, Pineapple_Juice, Super_Pineapple_Tea, Super_Pineapple_Milk_Tea}; 
+| |--b_bev_type[Green_Tea]     100.00% (7239/100)             47    bins b_bev_type [] = {Black_Tea, Milk_Tea, Extra_Milk_Tea, Green_Tea, Green_Milk_Tea, Pineapple_Juice, Super_Pineapple_Tea, Super_Pineapple_Milk_Tea}; 
+| |--b_bev_type[Green_Milk_Tea] 100.00% (6296/100)             47    bins b_bev_type [] = {Black_Tea, Milk_Tea, Extra_Milk_Tea, Green_Tea, Green_Milk_Tea, Pineapple_Juice, Super_Pineapple_Tea, Super_Pineapple_Milk_Tea}; 
+| |--b_bev_type[Pineapple_Juice] 100.00% (7625/100)             47    bins b_bev_type [] = {Black_Tea, Milk_Tea, Extra_Milk_Tea, Green_Tea, Green_Milk_Tea, Pineapple_Juice, Super_Pineapple_Tea, Super_Pineapple_Milk_Tea}; 
+| |--b_bev_type[Super_Pineapple_Tea] 100.00% (5999/100)             47    bins b_bev_type [] = {Black_Tea, Milk_Tea, Extra_Milk_Tea, Green_Tea, Green_Milk_Tea, Pineapple_Juice, Super_Pineapple_Tea, Super_Pineapple_Milk_Tea}; 
+| |--b_bev_type[Super_Pineapple_Milk_Tea] 100.00% (5839/100)             47    bins b_bev_type [] = {Black_Tea, Milk_Tea, Extra_Milk_Tea, Green_Tea, Green_Milk_Tea, Pineapple_Juice, Super_Pineapple_Tea, Super_Pineapple_Milk_Tea}; 
+Spec2                          100.00%, 100.00% (3/3)         52    covergroup Spec2 @(posedge clk); 
+|--bsize                       100.00% (3/3)                  55    bsize: coverpoint bev_info.bev_size{ 
+| |--b_bev_size[L]             100.00% (18867/100)            56    bins b_bev_size [] = {L, M, S}; 
+| |--b_bev_size[M]             100.00% (18091/100)            56    bins b_bev_size [] = {L, M, S}; 
+| |--b_bev_size[S]             100.00% (19786/100)            56    bins b_bev_size [] = {L, M, S}; 
+Spec3                          100.00%, 100.00% (35/35)       63    covergroup Spec3 @(posedge clk); 
+|--cbtype                      100.00% (8/8)                  66    cbtype: coverpoint bev_info.bev_type{ 
+| |--b_bev_type[Black_Tea]     100.00% (7585/100)             67    bins b_bev_type [] = {Black_Tea, Milk_Tea, Extra_Milk_Tea, Green_Tea, Green_Milk_Tea, Pineapple_Juice, Super_Pineapple_Tea, Super_Pineapple_Milk_Tea}; 
+| |--b_bev_type[Milk_Tea]      100.00% (7565/100)             67    bins b_bev_type [] = {Black_Tea, Milk_Tea, Extra_Milk_Tea, Green_Tea, Green_Milk_Tea, Pineapple_Juice, Super_Pineapple_Tea, Super_Pineapple_Milk_Tea}; 
+| |--b_bev_type[Extra_Milk_Tea] 100.00% (8597/100)             67    bins b_bev_type [] = {Black_Tea, Milk_Tea, Extra_Milk_Tea, Green_Tea, Green_Milk_Tea, Pineapple_Juice, Super_Pineapple_Tea, Super_Pineapple_Milk_Tea}; 
+| |--b_bev_type[Green_Tea]     100.00% (7239/100)             67    bins b_bev_type [] = {Black_Tea, Milk_Tea, Extra_Milk_Tea, Green_Tea, Green_Milk_Tea, Pineapple_Juice, Super_Pineapple_Tea, Super_Pineapple_Milk_Tea}; 
+| |--b_bev_type[Green_Milk_Tea] 100.00% (6296/100)             67    bins b_bev_type [] = {Black_Tea, Milk_Tea, Extra_Milk_Tea, Green_Tea, Green_Milk_Tea, Pineapple_Juice, Super_Pineapple_Tea, Super_Pineapple_Milk_Tea}; 
+| |--b_bev_type[Pineapple_Juice] 100.00% (7625/100)             67    bins b_bev_type [] = {Black_Tea, Milk_Tea, Extra_Milk_Tea, Green_Tea, Green_Milk_Tea, Pineapple_Juice, Super_Pineapple_Tea, Super_Pineapple_Milk_Tea}; 
+| |--b_bev_type[Super_Pineapple_Tea] 100.00% (5999/100)             67    bins b_bev_type [] = {Black_Tea, Milk_Tea, Extra_Milk_Tea, Green_Tea, Green_Milk_Tea, Pineapple_Juice, Super_Pineapple_Tea, Super_Pineapple_Milk_Tea}; 
+| |--b_bev_type[Super_Pineapple_Milk_Tea] 100.00% (5839/100)             67    bins b_bev_type [] = {Black_Tea, Milk_Tea, Extra_Milk_Tea, Green_Tea, Green_Milk_Tea, Pineapple_Juice, Super_Pineapple_Tea, Super_Pineapple_Milk_Tea}; 
+|--cbsize                      100.00% (3/3)                  69    cbsize: coverpoint bev_info.bev_size{ 
+| |--b_bev_size[L]             100.00% (18867/100)            70    bins b_bev_size [] = {L, M, S}; 
+| |--b_bev_size[M]             100.00% (18091/100)            70    bins b_bev_size [] = {L, M, S}; 
+| |--b_bev_size[S]             100.00% (19786/100)            70    bins b_bev_size [] = {L, M, S}; 
+|--__cbtype_X_cbsize           100.00% (24/24)                73    cross cbtype, cbsize;          
+| |--b_bev_type[Black_Tea],b_bev_size[L] 100.00% (2564/100)             73    cross cbtype, cbsize;          
+| |--b_bev_type[Black_Tea],b_bev_size[M] 100.00% (2086/100)             73    cross cbtype, cbsize;          
+| |--b_bev_type[Black_Tea],b_bev_size[S] 100.00% (2935/100)             73    cross cbtype, cbsize;          
+| |--b_bev_type[Milk_Tea],b_bev_size[L] 100.00% (2631/100)             73    cross cbtype, cbsize;          
+| |--b_bev_type[Milk_Tea],b_bev_size[M] 100.00% (2134/100)             73    cross cbtype, cbsize;          
+| |--b_bev_type[Milk_Tea],b_bev_size[S] 100.00% (2800/100)             73    cross cbtype, cbsize;          
+| |--b_bev_type[Extra_Milk_Tea],b_bev_size[L] 100.00% (2867/100)             73    cross cbtype, cbsize;          
+| |--b_bev_type[Extra_Milk_Tea],b_bev_size[M] 100.00% (2954/100)             73    cross cbtype, cbsize;          
+| |--b_bev_type[Extra_Milk_Tea],b_bev_size[S] 100.00% (2776/100)             73    cross cbtype, cbsize;          
+| |--b_bev_type[Green_Tea],b_bev_size[L] 100.00% (2293/100)             73    cross cbtype, cbsize;          
+| |--b_bev_type[Green_Tea],b_bev_size[M] 100.00% (2697/100)             73    cross cbtype, cbsize;          
+| |--b_bev_type[Green_Tea],b_bev_size[S] 100.00% (2249/100)             73    cross cbtype, cbsize;          
+| |--b_bev_type[Green_Milk_Tea],b_bev_size[L] 100.00% (2353/100)             73    cross cbtype, cbsize;          
+| |--b_bev_type[Green_Milk_Tea],b_bev_size[M] 100.00% (2115/100)             73    cross cbtype, cbsize;          
+| |--b_bev_type[Green_Milk_Tea],b_bev_size[S] 100.00% (1827/100)             73    cross cbtype, cbsize;          
+| |--b_bev_type[Pineapple_Juice],b_bev_size[L] 100.00% (2266/100)             73    cross cbtype, cbsize;          
+| |--b_bev_type[Pineapple_Juice],b_bev_size[M] 100.00% (1835/100)             73    cross cbtype, cbsize;          
+| |--b_bev_type[Pineapple_Juice],b_bev_size[S] 100.00% (3524/100)             73    cross cbtype, cbsize;          
+| |--b_bev_type[Super_Pineapple_Tea],b_bev_size[L] 100.00% (1588/100)             73    cross cbtype, cbsize;          
+| |--b_bev_type[Super_Pineapple_Tea],b_bev_size[M] 100.00% (2704/100)             73    cross cbtype, cbsize;          
+| |--b_bev_type[Super_Pineapple_Tea],b_bev_size[S] 100.00% (1707/100)             73    cross cbtype, cbsize;          
+| |--b_bev_type[Super_Pineapple_Milk_Tea],b_bev_size[L] 100.00% (2305/100)             73    cross cbtype, cbsize;          
+| |--b_bev_type[Super_Pineapple_Milk_Tea],b_bev_size[M] 100.00% (1566/100)             73    cross cbtype, cbsize;          
+| |--b_bev_type[Super_Pineapple_Milk_Tea],b_bev_size[S] 100.00% (1968/100)             73    cross cbtype, cbsize;          
+Spec4                          100.00%, 100.00% (4/4)         86    covergroup Spec4 @(posedge clk); 
+|--berr                        100.00% (4/4)                  89    berr: coverpoint err_info{     
+| |--b_err_msg[No_Err]         100.00% (19113/20)             90    bins b_err_msg [] = {No_Err, No_Exp, No_Ing, Ing_OF}; 
+| |--b_err_msg[No_Exp]         100.00% (18775/20)             90    bins b_err_msg [] = {No_Err, No_Exp, No_Ing, Ing_OF}; 
+| |--b_err_msg[No_Ing]         100.00% (778/20)               90    bins b_err_msg [] = {No_Err, No_Exp, No_Ing, Ing_OF}; 
+| |--b_err_msg[Ing_OF]         100.00% (18051/20)             90    bins b_err_msg [] = {No_Err, No_Exp, No_Ing, Ing_OF}; 
+Spec5                          100.00%, 100.00% (9/9)         104   covergroup Spec5 @(posedge clk iff(inf.sel_action_valid)); 
+|--bact                        100.00% (9/9)                  107   bact: coverpoint act_info{     
+| |--b_action[Make_drink=>Make_drink] 100.00% (268/200)              108   bins b_action [] = ([Make_drink:Check_Valid_Date]=>[Make_drink:Check_Valid_Date]); 
+| |--b_action[Make_drink=>Supply] 100.00% (258/200)              108   bins b_action [] = ([Make_drink:Check_Valid_Date]=>[Make_drink:Check_Valid_Date]); 
+| |--b_action[Make_drink=>Check_Valid_Date] 100.00% (252/200)              108   bins b_action [] = ([Make_drink:Check_Valid_Date]=>[Make_drink:Check_Valid_Date]); 
+| |--b_action[Supply=>Make_drink] 100.00% (269/200)              108   bins b_action [] = ([Make_drink:Check_Valid_Date]=>[Make_drink:Check_Valid_Date]); 
+| |--b_action[Supply=>Supply]  100.00% (221/200)              108   bins b_action [] = ([Make_drink:Check_Valid_Date]=>[Make_drink:Check_Valid_Date]); 
+| |--b_action[Supply=>Check_Valid_Date] 100.00% (212/200)              108   bins b_action [] = ([Make_drink:Check_Valid_Date]=>[Make_drink:Check_Valid_Date]); 
+| |--b_action[Check_Valid_Date=>Make_drink] 100.00% (240/200)              108   bins b_action [] = ([Make_drink:Check_Valid_Date]=>[Make_drink:Check_Valid_Date]); 
+| |--b_action[Check_Valid_Date=>Supply] 100.00% (223/200)              108   bins b_action [] = ([Make_drink:Check_Valid_Date]=>[Make_drink:Check_Valid_Date]); 
+| |--b_action[Check_Valid_Date=>Check_Valid_Date] 100.00% (255/200)              108   bins b_action [] = ([Make_drink:Check_Valid_Date]=>[Make_drink:Check_Valid_Date]); 
+Spec6                          100.00%, 100.00% (4/4)         135   covergroup Spec6 @(posedge clk iff(inf.box_sup_valid)); 
+|--bsup_B                      100.00% (1/1)                  139   bsup_B: coverpoint sup_B{      
+| |--b_sup_B                   100.00% (2807/1)               140   bins b_sup_B = {[1:4095]};     
+|--bsup_G                      100.00% (1/1)                  143   bsup_G: coverpoint sup_G{      
+| |--b_sup_G                   100.00% (2806/1)               144   bins b_sup_G = {[1:4095]};     
+|--bsup_M                      100.00% (1/1)                  147   bsup_M: coverpoint sup_M{      
+| |--b_sup_M                   100.00% (2805/1)               148   bins b_sup_M = {[1:4095]};     
+|--bsup_J                      100.00% (1/1)                  151   bsup_J: coverpoint sup_J{      
+| |--b_sup_J                   100.00% (2804/1)               152   bins b_sup_J = {[1:4095]};     
+
