@@ -49,7 +49,7 @@ reg [$clog2(WORDS):0] rptr;
 // ------------------------------------------------------------
 integer i;
 
-wire wean;
+wire wean, rean;
 
 reg [$clog2(WORDS):0] rq2_wptr, wq2_rptr;
 
@@ -90,6 +90,8 @@ end
 // ---------------
 // Read
 // ---------------
+assign rean = (!empty & rinc);
+
 // read empty in FIFO
 always @(*) begin
     if(rptr==rq2_wptr) rempty = 1'd1;
@@ -99,7 +101,7 @@ end
 // read address
 always @(posedge rclk or negedge rst_n) begin
     if(!rst_n) raddr <= 7'd0;
-    else if(!rempty) raddr <= raddr + 1'd1;
+    else if(rean) raddr <= raddr + 1'd1;
     else raddr <= raddr;
 end
 
@@ -112,7 +114,7 @@ end
 // read temp valid
 always @(posedge rclk or negedge rst_n) begin
     if(!rst_n) r_temp_valid <= 1'd0;
-    else r_temp_valid <= !rempty;
+    else r_temp_valid <= rean;
 end
 
 // rdata
@@ -127,7 +129,7 @@ end
 
 // SRAM csb
 always @(*) begin
-    if(!rempty) csb = 1'b1;
+    if(rean) csb = 1'b1;
     else csb = 1'b0;
 end
 
